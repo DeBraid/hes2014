@@ -86,9 +86,9 @@ a:after {
 
 .navbar {
 	font-weight: 800;
-	font-size: 14px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	font-size: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .navbar-inverse {
@@ -145,7 +145,7 @@ a:after {
     position: absolute;
     height:100%;
     width: 100%;
-    -webkit-filter: blur(2px);
+    -webkit-filter: blur(1.5px);
 }
 
 .jumbo {
@@ -153,8 +153,9 @@ a:after {
 }
 
 .jumbo-text {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(224,224,224,0.5);
     border-radius: 30px;
+    color: white;
 }
 
 #logo {
@@ -199,13 +200,14 @@ a:after {
 #headerwrap h2 {
 	color: white;
 	font-size: 40px;
-	font-weight: 700;
+	font-weight: 600;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
 
 #headerwrap h3 {
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.3);
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
 }
 
 /* Dark Grey Wrap */
@@ -218,6 +220,14 @@ a:after {
 
 #dg h4 {
 	font-weight: 700;
+}
+
+#dg li {
+    list-style: none;
+}
+
+#price {
+    margin-top: 100px;
 }
 
 /* Light Grey */
