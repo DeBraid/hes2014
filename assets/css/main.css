@@ -148,18 +148,16 @@ a:after {
     -webkit-filter: blur(1.5px);
 }
 
-.jumbo {
-    text-shadow: 1px 1px #000;
-}
-
 .jumbo-text {
     background-color: rgba(224,224,224,0.5);
-    border-radius: 30px;
-    color: white;
+    border-radius: 40px;
+    text-shadow: 1px 1px #000;
+    padding: 2px 3px 10px 3px;
 }
 
 #logo {
     height: 25em;
+    margin-bottom: -25px;
 }
 
 .contact-btn {
@@ -170,7 +168,7 @@ a:after {
     display: inline-block;
 }
 #headerwrap {
-	margin-top: -10px;
+	margin-top: -20px;
 	padding-top:20px;
 	text-align:center;
 	background-attachment: relative;
@@ -191,22 +189,22 @@ a:after {
 
 #headerwrap h1 {
 	margin-top: 10px;
-	color: white;
-	font-size: 70px;
+	color: #00AE9D;
+	font-size: 69px;
 	font-weight: 300;
 	letter-spacing: 3px;
 }
 
 #headerwrap h2 {
 	color: white;
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: 600;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
 
 #headerwrap h3 {
-    color: white;
+    color: #00AE9D;
     text-shadow: 1px 1px rgba(0, 0, 0, 1);
 }
 
@@ -223,7 +221,8 @@ a:after {
 }
 
 #dg li {
-    list-style: none;
+    line-height: 1.5em;
+    font-size: 1.1em;
 }
 
 #price {
