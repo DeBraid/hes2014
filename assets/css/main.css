@@ -111,10 +111,9 @@ a:after {
     color: #00AE9D;     
 }
 
-.navbar-inverse .navbar-brand i {
-	color: #00AE9D;
-	font-size: 22px;
-	letter-spacing: 1px;
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+	color: #FFF;
 }
 
 /*TILT*/
@@ -160,25 +159,12 @@ a:after {
     background-color: #00AE9D;
     color: white;
 }
-#ipad {
-    display: inline-block;
-}
+
 #headerwrap {
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
+	margin-top: 125px;
+    text-align:center;
 	min-height: 500px;
 	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 #headerwrap h1 {
