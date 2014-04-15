@@ -17,7 +17,7 @@
 
 body {
   background-color: #f2f2f2;
-    font-family: "Lato";
+    
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -30,7 +30,7 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway";
+    
     font-weight: 300;
     color: #333;
 }
@@ -140,24 +140,20 @@ a:after {
    ========================================================================== */
 
 #skyline {
-    background: url(../img/HamSkyline.jpg) no-repeat center top;
+    background: #FFF;
     z-index: 0;
     position: absolute;
     height:100%;
     width: 100%;
-    -webkit-filter: blur(1.5px);
 }
 
 .jumbo-text {
-    background-color: rgba(224,224,224,0.5);
-    border-radius: 40px;
-    text-shadow: 1px 1px #000;
     padding: 2px 3px 10px 3px;
+    color: black;
 }
 
 #logo {
     height: 25em;
-    margin-bottom: -25px;
 }
 
 .contact-btn {
@@ -168,8 +164,6 @@ a:after {
     display: inline-block;
 }
 #headerwrap {
-	margin-top: -20px;
-	padding-top:20px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
@@ -190,22 +184,19 @@ a:after {
 #headerwrap h1 {
 	margin-top: 10px;
 	color: #00AE9D;
-	font-size: 69px;
-	font-weight: 300;
-	letter-spacing: 3px;
+	font-size: 45px;
+	font-weight: 900;
 }
 
 #headerwrap h2 {
-	color: white;
+	color: black;
 	font-size: 35px;
 	font-weight: 600;
 	letter-spacing: 2px;
-	text-transform: uppercase;
 }
 
 #headerwrap h3 {
-    color: #00AE9D;
-    text-shadow: 1px 1px rgba(0, 0, 0, 1);
+    color: black;
 }
 
 /* Dark Grey Wrap */
@@ -357,7 +348,7 @@ a:after {
 
 .modal-body {
 	background: #f2f2f2;
-    font-family: "Lato";
+    
     font-weight: 300;
     font-size: 16px;
     color: #555;
