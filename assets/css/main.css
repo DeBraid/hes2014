@@ -16,7 +16,7 @@
 /* OVERALL ASPECT */
 
 body {
-  background-color: #f2f2f2;
+  background-color: #fff;
     
     font-weight: 300;
     font-size: 16px;
@@ -30,7 +30,6 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    
     font-weight: 300;
     color: #333;
 }
@@ -139,21 +138,22 @@ a:after {
    Wrap Sections
    ========================================================================== */
 
-#skyline {
-    background: #FFF;
-    z-index: 0;
-    position: absolute;
-    height:100%;
-    width: 100%;
-}
 
 .jumbo-text {
-    padding: 2px 3px 10px 3px;
     color: black;
 }
 
 #logo {
     height: 25em;
+}
+
+#voice {
+    float: right;
+    display: block;
+}
+
+#voice img {
+    height: 5em;
 }
 
 .contact-btn {
