@@ -30,7 +30,7 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: 500;
     color: #333;
 }
 
@@ -146,6 +146,10 @@ a:after {
     height: 25em;
 }
 
+.pipes {
+    color: #00AE9D;
+}
+
 #voice {
     float: right;
     display: block;
@@ -169,7 +173,8 @@ a:after {
 }
 
 #headerwrap h1 {
-	margin-top: 10px;
+	margin-top: 50px;
+    margin-bottom: -20px;
 	color: #00AE9D;
 	font-size: 45px;
 	font-weight: 900;
@@ -179,11 +184,16 @@ a:after {
 	color: black;
 	font-size: 35px;
 	font-weight: 600;
-	letter-spacing: 2px;
+	letter-spacing: 1.5px;
+    margin-top: 50px;
 }
 
 #headerwrap h3 {
     color: black;
+}
+
+#location {
+    line-height: 0.1em;
 }
 
 /* Dark Grey Wrap */
