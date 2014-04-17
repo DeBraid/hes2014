@@ -137,7 +137,6 @@ a:after {
    Wrap Sections
    ========================================================================== */
 
-
 .jumbo-text div {
     color: black;
 }
@@ -173,9 +172,6 @@ a:after {
     max-width: 33%;
   }
 }
-
-
-
 
 .pipes {
     color: #00AE9D;
@@ -299,8 +295,8 @@ a:after {
 /* Footer Wrap */
 #f {
 	background: #2d2d2d;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 #f i {
@@ -311,6 +307,11 @@ a:after {
 
 #f i:hover {
 	color: #00AE9D;
+}
+
+#dev a {
+    font-size: 0.7em;
+    color: white;
 }
 
 /****** SECTIONS *****/
