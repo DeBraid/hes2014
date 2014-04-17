@@ -146,6 +146,37 @@ a:after {
     height: 25em;
 }
 
+#participants img {
+    max-width: 66%;
+    height: auto;
+    padding: 3px;
+    margin-top: 10px
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+@media (max-width: 1198px) {
+  #participants img  {
+    max-width: 33%;
+  }
+}
+
+@media (max-width: 768px) {
+  #participants img  {
+    max-width: 23%;
+  }
+}
+
+@media (max-width: 450px) {
+  #participants img  {
+    max-width: 33%;
+  }
+}
+
+
+
+
 .pipes {
     color: #00AE9D;
 }
@@ -219,7 +250,7 @@ a:after {
 
 /* Light Grey */
 #lg {
-	background: #ebebeb;
+	background: #FFF;
 	padding-top: 70px;
 	padding-bottom: 70px;
 	text-align: center;
