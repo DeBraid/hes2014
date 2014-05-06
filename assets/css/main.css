@@ -146,7 +146,7 @@ a:after {
 }
 
 #participants img {
-    max-width: 66%;
+    width: 50%;
     height: auto;
     padding: 3px;
     margin-top: 10px
