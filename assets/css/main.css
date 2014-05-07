@@ -146,10 +146,12 @@ a:after {
 }
 
 #participants img {
-    width: 50%;
+    overflow: hidden;
+    width: 54%;
     height: auto;
-    padding: 3px;
+    padding: 1em;
     margin-top: 10px
+
     filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
@@ -157,7 +159,7 @@ a:after {
 
 @media (max-width: 1198px) {
   #participants img  {
-    max-width: 33%;
+    max-width: 50%;
   }
 }
 
