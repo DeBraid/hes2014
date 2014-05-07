@@ -144,6 +144,22 @@ a:after {
 #logo {
     height: 25em;
 }
+#agen {
+    background-color: #fcfcfc;
+    border-radius: 25%;
+    margin-bottom: 2em;
+    padding: 1em 0 1em 0;
+}
+
+.agenda-container p {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.agenda-container p,
+.agenda-container ul {
+    font-weight: 500;
+}
 
 #participants img {
     overflow: hidden;
@@ -243,7 +259,7 @@ a:after {
 }
 
 #price {
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 /* Light Grey */
