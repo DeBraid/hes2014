@@ -196,9 +196,14 @@ a:after {
     color: #00AE9D;
 }
 
+#productionOf {
+    font-size: 1.35em;
+}
+
 #voice {
-    margin-left: 10px;
+    margin-left: -20px;
     font-size: 1.2em;
+    text-align: center; 
 }
 
 #voice img {
@@ -240,6 +245,7 @@ a:after {
 
 #headerwrap h3 {
     color: black;
+    font-weight: 500;
 }
 
 #location {
