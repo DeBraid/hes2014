@@ -197,11 +197,12 @@ a:after {
 }
 
 #voice {
-    margin-left: 2em;
+    margin-left: 10px;
+    font-size: 1.2em;
 }
 
 #voice img {
-    height: 5em;
+    height: 6em;
 }
 
 #voice .btn {
