@@ -162,7 +162,8 @@ a:after {
     font-weight: 500;
 }
 
-#participants img {
+#participants img,
+#sponsors img {
     overflow: hidden;
     width: 54%;
     height: auto;
