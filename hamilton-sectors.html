@@ -61,9 +61,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
 
-            <li><a href="/">HOME</a></li>
-            <!-- <li><a href="#format">Chart 1</a></li>
-            <li><a href="#participants">Chart 2</a></li> -->
+            <li><a href="/">Event Homepage</a></li>
             <li><a href="/hamilton-sectors.html" target="_blank">Hamilton GDP</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -77,88 +75,33 @@
           
           <div class="row">
               <div class="col-lg-12">
-                <h1>Canadian Cities Over Time</h1>
+                <h1>Hamilton GDP By Sector Over Time</h1>
                 <hr />
               </div>
           </div>
+
+        </div>
+      </div>
             
-          <div class="col-lg-3" id="searchMenu">
-          
-              <div class="container-fluid" ng-controller="TypeaheadCtrl">
-                  
-                  <input type="search" ng-model="selected" ng-trim="false" typeahead="city for city in cities | filter:$viewValue | limitTo:8" class="form-control" id="searchBox" onkeyup="checkFilled()" placeholder="Search for a city...">
-
-              </div>
-
-              <div class="dropdown" ng-controller="DropdownCtrl">
-                  
-                  <a class="btn btn-danger dropdown-toggle">Hint</a>
-                  
-                  <div class="dropdown-menu">
-                  
-                    <li ng-repeat="choice in items">
-                      <a class="hints">{{ choice }}</a>
-                    </li>
-                  
-                  </div>
-
-              </div>
-
-          </div>  <!-- end searchMenu -->
-        </div>  <!-- end container -->
-      </div>  <!-- end row -->
-        
       <div class="row">
 
  
-        <div class="col-lg-9">
+            <div class="col-lg-9">
 
-            <div id="chart">
-              <!-- main dancing balls chart -->
-            </div> 
+                <div id="sector-line">
+                  <!-- line sector chart -->
+                </div> 
 
-        </div>  
+            </div>  
 
-        <div class="col-lg-3">
-          
-            <!-- AGENDA / FORMAT SECTION -->
-            <div id="accord" ng-controller="AccordionCtrl">
-            
-                <accordion close-others="oneAtATime">
-                  <accordion-group heading="SUMMARY" is-open="true">
-                    Over 12,000 data points ranging 30 years for the largest cities in Canada. The economy in motion as measured by GDP, Income and Employment. 
-
-                    <a onclick="drawWithLeg()" class="btn btn-alert">Redraw with Legend</a>  
-                  </accordion-group>
-
-                  <accordion-group heading="{{ group.title }}: {{ group.axis }}" ng-repeat="group in groups">
-                    {{ group.content }}
-                  </accordion-group>
-
-                  <accordion-group is-open="isopen">
-                      <accordion-heading>
-                          Learn More... <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i>
-                      </accordion-heading>
-                          
-                            <p id="adopted">Visualization by <a href="http://www.cacheflow.ca" target="_blank">Derek Braid  </a>adopted from <a href="http://bost.ocks.org/mike/nations/" rel="author" target="_blank">Bostock, via Carden & Rosling</a></p>
-                          
-                  </accordion-group>
-                </accordion>
-
-            </div> 
-
-        </div>
+            <div class="col-lg-3">
+              
+                <!-- AGENDA / FORMAT SECTION -->
+              
+            </div>
 
       </div><!-- row -->
     </div><!-- container -->
-
-    <div class="row">
-      <div class="container">
-        
-                <aside id="mouse-tip">Mouseover the year to move forward and backwards through time.</aside>
-
-      </div>
-    </div>
 
   <!-- HAMILTON CHAMBER -->
   <div id="r">
@@ -199,11 +142,10 @@
     ================================================== -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/d3tip.js"></script>
-    <script type="text/javascript" src="assets/js/wealth.js"></script>
-    <script type="text/javascript" src="assets/js/accord-menu.js"></script>
-    <script type="text/javascript" src="assets/js/inputSort.js"></script>
-    <script type="text/javascript" src="assets/js/hint.js"></script>
+    <script type="text/javascript" src="assets/js/sector-line.js"></script>
+    
+    
+    
 
   </body>
 </html>
