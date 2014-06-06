@@ -161,3 +161,7 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 .panel-body {
   font-size: 0.9em;
 }
+
+#line-chart-container {
+  margin: 2em 0 2em 0;
+}
