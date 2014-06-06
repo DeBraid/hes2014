@@ -128,7 +128,6 @@
                   <accordion-group heading="SUMMARY" is-open="true">
                     Over 12,000 data points ranging 30 years for the largest cities in Canada. The economy in motion as measured by GDP, Income and Employment. 
 
-                    <a onclick="drawWithLeg()" class="btn btn-alert">Redraw with Legend</a>  
                   </accordion-group>
 
                   <accordion-group heading="{{ group.title }}: {{ group.axis }}" ng-repeat="group in groups">
@@ -147,6 +146,7 @@
 
             </div> 
 
+          <a id="redraw" class="btn btn-success">Redraw with Legend</a>  
         </div>
 
       </div><!-- row -->
@@ -204,6 +204,7 @@
     <script type="text/javascript" src="assets/js/accord-menu.js"></script>
     <script type="text/javascript" src="assets/js/inputSort.js"></script>
     <script type="text/javascript" src="assets/js/hint.js"></script>
+    <script type="text/javascript" src="assets/js/redraw.js"></script>
 
   </body>
 </html>

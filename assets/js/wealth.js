@@ -198,4 +198,6 @@ d3.json("assets/js/myNations.json", function(nations) {
     }
     return a[1];
   }
+
+
 });
