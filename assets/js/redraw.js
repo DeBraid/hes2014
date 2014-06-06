@@ -25,7 +25,7 @@ d3.select('#redraw').on("click", function () {
     
 
   customHammerLabel();
-  customFills();
+  customFills(false);
 
 });
 
@@ -46,7 +46,7 @@ var customHammerLabel = function () {
 
 };
 
-function customFills () {
+function customFills ( boo ) {
 
   var fillData = [
     {"city": "Hamilton", "fill": "yellow"},
@@ -61,9 +61,12 @@ function customFills () {
     {"city": "London", "fill": "rgb(197, 176, 213)"},
   ];
   
-  fillData.forEach(function (obj) {
 
-      var selectedLabel = d3.selectAll("#" + obj.city); 
+  fillData.forEach(function (obj) {
+      
+    var selectedLabel = d3.selectAll("#" + obj.city); 
+
+    if (boo == true ) {
 
       selectedLabel
         .style({
@@ -73,6 +76,19 @@ function customFills () {
         .style({
           "fill": obj.fill
         })
+    } else if ( boo == false ) {
+
+      d3.select('.legend').remove();
+
+      selectedLabel
+        .transition().duration(2500)
+        .style({
+          "fill": "rgb(0, 174, 157)",
+          "stroke-width": "1px"
+        })
+
+
+    }
 
   })
 };
