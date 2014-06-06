@@ -10,13 +10,13 @@ d3.select('#redraw').on("click", function () {
         .attr("transform", function(d, i) { return "translate(-20," + i * 20 + ")"; });
 
     legend.append("rect")
-        .attr("x", width + 60)
+        .attr("x", 60)
         .attr("width", 18)
         .attr("height", 18)
         .attr("id", function (d) { return d; });
 
     legend.append("text")
-          .attr("x", width + 54)
+          .attr("x", 135)
           .attr("y", 9)
           .attr("dy", ".35em")
           .style("text-anchor", "end")
@@ -66,6 +66,10 @@ function customFills () {
       var selectedLabel = d3.selectAll("#" + obj.city); 
 
       selectedLabel
+        .style({
+          "fill": "rgb(0, 174, 157)"
+        })
+        .transition().duration(2500)
         .style({
           "fill": obj.fill
         })
