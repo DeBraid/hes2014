@@ -79,11 +79,11 @@
             <hr />
           </div>
             
-            <div id="searchMenu">
+            <div class="col-lg-3" id="searchMenu">
           
               <div class="container-fluid" ng-controller="TypeaheadCtrl">
 
-                <input type="search" ng-model="selected" typeahead="city for city in cities | filter:$viewValue | limitTo:8" class="form-control" id="searchBox" onkeyup="checkFilled()" placeholder="Search for a city...">
+                <input type="search" ng-model="selected" ng-trim="false" typeahead="city for city in cities | filter:$viewValue | limitTo:8" class="form-control" id="searchBox" onkeyup="checkFilled()" placeholder="Search for a city...">
 
               </div>
 
@@ -93,7 +93,7 @@
                 </a>
                 <div class="dropdown-menu">
                   <li ng-repeat="choice in items">
-                    <a onclick="checkFilled()">{{ choice }}</a>
+                    <a class="hints" onclick="checkFilled()">{{ choice }}</a>
                   </li>
                 </div>
               </div>
@@ -185,6 +185,7 @@
     <script type="text/javascript" src="assets/js/wealth.js"></script>
     <script type="text/javascript" src="assets/js/accord-menu.js"></script>
     <script type="text/javascript" src="assets/js/inputSort.js"></script>
+    <script type="text/javascript" src="assets/js/hint.js"></script>
 
   </body>
 </html>

@@ -19,11 +19,6 @@
   width: 100%;
 }
 
-#accord {
-  max-width: 80%;
-  margin-top: 50px;
-}
-
 
 text {
   font: 10px sans-serif;
@@ -62,7 +57,7 @@ text {
 .overlay {
   fill: none;
   pointer-events: all;
-  cursor: e-resize;
+  cursor: move;
 }
 
 .searched {

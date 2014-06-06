@@ -1,11 +1,12 @@
+
+
 function checkFilled () {
 
-  var inputVal = document.getElementById("searchBox").value;
-  console.log(inputVal);
+  var myVal = document.getElementById("searchBox").value,
+      inputVal = myVal.toString(),
+      cities = [];
+
   var circleId = d3.select("#" + inputVal + "");
-
-  var cities = [];
-
 
   d3.selectAll("circle").each(function(d,i){
     
@@ -18,6 +19,9 @@ function checkFilled () {
 
   cities.forEach(function ( city ) {
   
+    inputVal = inputVal.substring(0,3);
+    city = city.substring(0,3);
+
     if ( inputVal == city ){
 
           circleId.style("fill", "tomato");
