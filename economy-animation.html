@@ -56,15 +56,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">#HES2014</a>
+          <a class="navbar-brand" href="#">#HES2014 DATA</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
 
             <li><a href="/">HOME</a></li>
-            <li><a href="#format">Chart 1</a></li>
-            <li><a href="#participants">Chart 2</a></li>
-            <li><a href="/" target="_blank">Chart 3</a></li>
+            <!-- <li><a href="#format">Chart 1</a></li>
+            <li><a href="#participants">Chart 2</a></li> -->
+            <li><a href="/" target="_blank">Hamilton Economy By Sector</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -74,74 +74,98 @@
       <div class="row">
 
         <div class="container">  
-          <div class="col-lg-12">
-            <h1>Canadian Cities Over Time</h1>
-            <hr />
+          
+          <div class="row">
+              <div class="col-lg-12">
+                <h1>Canadian Cities Over Time</h1>
+                <hr />
+              </div>
           </div>
             
-            <div class="col-lg-3" id="searchMenu">
+          <div class="col-lg-3" id="searchMenu">
           
               <div class="container-fluid" ng-controller="TypeaheadCtrl">
-
-                <input type="search" ng-model="selected" ng-trim="false" typeahead="city for city in cities | filter:$viewValue | limitTo:8" class="form-control" id="searchBox" onkeyup="checkFilled()" placeholder="Search for a city...">
+                  
+                  <input type="search" ng-model="selected" ng-trim="false" typeahead="city for city in cities | filter:$viewValue | limitTo:8" class="form-control" id="searchBox" onkeyup="checkFilled()" placeholder="Search for a city...">
 
               </div>
 
               <div class="dropdown" ng-controller="DropdownCtrl">
-                <a class="btn btn-danger dropdown-toggle">
-                  Hint
-                </a>
-                <div class="dropdown-menu">
-                  <li ng-repeat="choice in items">
-                    <a class="hints" onclick="checkFilled()">{{ choice }}</a>
-                  </li>
-                </div>
+                  
+                  <a class="btn btn-danger dropdown-toggle">Hint</a>
+                  
+                  <div class="dropdown-menu">
+                  
+                    <li ng-repeat="choice in items">
+                      <a class="hints">{{ choice }}</a>
+                    </li>
+                  
+                  </div>
+
               </div>
-            </div>    
 
-            <div id="chart">
-              <!-- main dancing balls chart -->
-            </div> 
+          </div>  <!-- end searchMenu -->
+        </div>  <!-- end container -->
+      </div>  <!-- end row -->
+        
+      <div class="row">
 
-            <aside id="mouse-tip">Mouseover the year to move forward and backwards through time.</aside>
+ 
+            <div class="col-lg-9">
 
-        </div>
+                <div id="chart">
+                  <!-- main dancing balls chart -->
+                </div> 
+
+            </div>  
+
+            <div class="col-lg-3">
+              
+                <!-- AGENDA / FORMAT SECTION -->
+                <div id="">
+                  <div id="">
+                    <div class="">
+                      <div class="">
+                            <div id="accord" ng-controller="AccordionCtrl">
+                          
+                              <accordion close-others="oneAtATime">
+                                <accordion-group heading="SUMMARY" is-open="true">
+                                  Over 12,000 data points ranging 30 years for the largest cities in Canada. The economy in motion as measured by GDP, Income and Employment.   
+                                </accordion-group>
+
+                                <accordion-group heading="{{ group.title }}: {{ group.axis }}" ng-repeat="group in groups">
+                                  {{ group.content }}
+                                </accordion-group>
+
+                                <accordion-group is-open="isopen">
+                                    <accordion-heading>
+                                        Learn More... <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i>
+                                    </accordion-heading>
+                                        
+                                          <p id="adopted">Visualization by <a href="http://www.cacheflow.ca" target="_blank">Derek Braid  </a>adopted from <a href="http://bost.ocks.org/mike/nations/" rel="author" target="_blank">Bostock, via Carden & Rosling</a></p>
+                                        
+                                </accordion-group>
+                              </accordion>
+
+                            </div>
+                          </div>
+
+                    </div><!-- container -->
+                  </div><!-- DG -->
+                </div><!-- format -->
+
+            </div>
+
       </div><!-- row -->
     </div><!-- container -->
 
-  <!-- AGENDA / FORMAT SECTION -->
-  <div id="format">
-    <div id="dg">
+    <div class="row">
       <div class="container">
-        <div class="row">
-              <div id="accord" ng-controller="AccordionCtrl">
-            
-                <accordion close-others="oneAtATime">
-                  <accordion-group heading="SUMMARY" is-open="true">
-                    With over 12,000 data points from the largest 28 metropolitan cities in Canada, behold the economy in motion from 1987 through 2018 (estimates).  Measurements for GDP, Income and Employment from Conference Board of Canada.   
-                  </accordion-group>
+        
+                <aside id="mouse-tip">Mouseover the year to move forward and backwards through time.</aside>
 
-                  <accordion-group heading="{{ group.title }}: {{ group.axis }}" ng-repeat="group in groups">
-                    {{ group.content }}
-                  </accordion-group>
-
-                  <accordion-group is-open="isopen">
-                      <accordion-heading>
-                          Learn More... <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i>
-                      </accordion-heading>
-                          
-                            <p id="adopted">Visualization by <a href="http://www.cacheflow.ca" target="_blank">Derek Braid  </a>adopted from <a href="http://bost.ocks.org/mike/nations/" rel="author" target="_blank">Bostock, via Carden & Rosling</a></p>
-                          
-                  </accordion-group>
-                </accordion>
-
-              </div>
-            </div>
-
-      </div><!-- container -->
-    </div><!-- DG -->
-  </div><!-- format -->
-
+      </div>
+    </div>
   <!-- HAMILTON CHAMBER -->
   <div id="r">
     <div class="container">

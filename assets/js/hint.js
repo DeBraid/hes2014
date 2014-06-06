@@ -1,11 +1,11 @@
 var cities = [];
 
-document.addEventListener('click', function(e) {
+var hints = document.getElementById('searchMenu');
+
+hints.addEventListener('click', function(e) {
       e = e || window.event;
       var target = e.target || e.srcElement,
           text = target.textContent || text.innerText;   
-  
-  console.log(text);
 
   var circleId = d3.select("#" + text + "");
 
@@ -25,7 +25,17 @@ document.addEventListener('click', function(e) {
 
     if ( text == city ){
 
-          circleId.style("fill", "tomato");
+          circleId
+            .transition().duration(1500)
+            .style({
+              
+                "fill": "tomato",
+                "stroke-width": "8px"
+            })
+            .transition().duration(500)
+            .style({
+                "stroke-width": "1px"
+            });
 
                  
       }

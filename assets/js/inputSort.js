@@ -1,5 +1,3 @@
-
-
 function checkFilled () {
 
   var myVal = document.getElementById("searchBox").value,
@@ -24,9 +22,16 @@ function checkFilled () {
 
     if ( inputVal == city ){
 
-          circleId.style("fill", "tomato");
-
-                 
+          circleId
+            .transition().duration(1500)
+            .style({
+                "fill": "tomato",
+                "stroke-width": "8px"
+            })
+            .transition().duration(500)
+            .style({
+                "stroke-width": "1px"
+            });  
       }
   })
   
