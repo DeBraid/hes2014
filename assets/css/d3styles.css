@@ -69,6 +69,10 @@ text {
   margin-top: 0.5em;
 }
 
+.dropdown-menu > li > a {
+  line-height: 0.6em;
+}
+
 /* LINKS.HTML */
 
 .city path {
