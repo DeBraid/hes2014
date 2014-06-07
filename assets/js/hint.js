@@ -1,6 +1,6 @@
 var cities = [];
 
-var hints = document.getElementById('searchMenu');
+var hints = document.getElementById('hint-box');
 
 hints.addEventListener('click', function(e) {
       e = e || window.event;
