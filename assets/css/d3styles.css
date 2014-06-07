@@ -11,6 +11,7 @@
 
 #searchMenu {
   display: inline-block;
+  padding-left: 0;
 }
 
 #sankey-chart {
@@ -62,6 +63,10 @@ text {
 
 .searched {
   fill: red;
+}
+
+.dropdown {
+  float: left;
 }
 
 .dropdown a {
@@ -169,3 +174,10 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 #line-chart-container {
   margin: 2em 0 2em 0;
 }
+
+#redraw {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+
