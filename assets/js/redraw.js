@@ -25,7 +25,7 @@ d3.select('#redraw').on("click", function () {
     
 
   customHammerLabel();
-  customFills(false);
+  customFills();
 
 });
 
@@ -46,7 +46,7 @@ var customHammerLabel = function () {
 
 };
 
-function customFills ( boo ) {
+function customFills () {
 
   var fillData = [
     {"city": "Hamilton", "fill": "yellow"},
@@ -66,8 +66,6 @@ function customFills ( boo ) {
       
     var selectedLabel = d3.selectAll("#" + obj.city); 
 
-    if (boo == true ) {
-
       selectedLabel
         .style({
           "fill": "rgb(0, 174, 157)"
@@ -76,19 +74,6 @@ function customFills ( boo ) {
         .style({
           "fill": obj.fill
         })
-    } else if ( boo == false ) {
-
-      d3.select('.legend').remove();
-
-      selectedLabel
-        .transition().duration(2500)
-        .style({
-          "fill": "rgb(0, 174, 157)",
-          "stroke-width": "1px"
-        })
-
-
-    }
-
+  
   })
 };
