@@ -212,7 +212,8 @@ a:after {
 }
 
 #voice .btn {
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
     background-color: #00AE9D;
 }
 
